@@ -1,2 +1,24 @@
 :root {
+    --bg-color-dark: #BDCDD6;
+    --bg-color-dark-acc: #525b60;
+    --bg-color-light: #F6F1F1;
+    --bg-color-light-alt: #DDE6ED;
+    --text-color-light: #537188;
+    --text-color-dark: #27374D;
+    --text-color-light-acc: #EEEEEE;
+    --bg-button-color: #609966;
+    --bg-button-color-hover: #40513B;
+    --text-button-color: #E5F9DB;
+}
+
+
+.root {
+    width: 100vw;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Geneva, Verdana, sans-serif;
+
 }

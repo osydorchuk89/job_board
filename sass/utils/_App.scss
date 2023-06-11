@@ -13,6 +13,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--text-color-dark);
 }
 
 input,
@@ -20,4 +21,30 @@ button,
 textarea {
     border: none;
     outline: none;
+}
+
+@mixin AccentedText {
+    background-color: var(--bg-color-dark-acc);
+    color: var(--text-color-light-acc);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.nav-button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: var(--bg-button-color);
+    color: var(--text-button-color);
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: var(--bg-button-color-hover);
+    transition: 0.5s;
+}
+
+.main-title {
+    margin: 50px 200px;
+    text-align: center;
 }

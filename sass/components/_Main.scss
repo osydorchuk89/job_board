@@ -1,0 +1,132 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70vh;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-dark);
+    margin-top: 89px;
+
+    section.main-search {
+        padding-top: 45px;
+        background-image: url("../../assets/images/job_search.jpg");
+        background-size: contain;
+
+        ul.main-search-list {
+            display: flex;
+            flex-direction: column;
+            margin: 200px;
+
+            li {
+
+                h1 {
+                    margin-bottom: 50px;
+                }
+
+                form.main-search-form {
+                    width: 100%;
+                    margin-bottom: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input.search-form {
+                        margin-right: 50px;
+                        width: 30%;
+                        padding: 20px;
+                        border-radius: 10px;
+                    }
+
+                    button.nav-button {
+                        width: 25%;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.main-categories {
+        background-color: var(--bg-color-light-alt);
+
+        ul.main-categories {
+            margin: 50px 200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                ul.main-category {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 15vw;
+                    height: 15vw;
+                    background-color: var(--bg-color-dark);
+                    margin: 20px 0;
+                    border-radius: 15px;
+                    transition: transform 1s;
+
+                    li {
+                        margin: 20px 0;
+                    }
+
+                    li:last-child {
+                        @include AccentedText;
+                    }
+                }
+
+                ul.main-category:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+
+        }
+
+
+    }
+
+    section.main-blogs {
+        ul.main-blogs {
+            margin: 50px 200px;
+            display: flex;
+            justify-content: space-between;
+
+            li.main-blog {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                padding-left: 10px;
+
+                img {
+                    margin-bottom: 15px;
+                }
+
+                h3 {
+                    margin-bottom: 15px;
+                }
+
+                p.main-blog-subtitle {
+                    color: var(--text-color-light);
+                    font-size: 0.9rem;
+                    margin-bottom: 15px;
+                }
+
+                p.main-blog-text {
+                    margin-bottom: 25px;
+                    font-size: 0.9rem;
+                }
+
+                p.main-blog-link {
+
+                    a {
+                        @include AccentedText;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
