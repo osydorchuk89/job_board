@@ -1,20 +1,20 @@
 .main {
     display: flex;
     flex-direction: column;
-    flex-basis: 70vh;
     background-color: var(--bg-color-light);
     color: var(--text-color-dark);
-    margin-top: 89px;
+    margin-top: 70px;
 
     section.main-search {
         padding-top: 45px;
-        background-image: url("https://raw.githubusercontent.com/osydorchuk89/job_board/main/assets/images/job_search.jpg");
-        background-position: 50%;
+        background-image: url("../../assets/images/job_search.jpg");
+        background-position: 25%;
 
         ul.main-search-list {
             display: flex;
             flex-direction: column;
-            margin: 200px;
+            margin: 12vw;
+            min-height: 50vh;
 
             li {
 
@@ -48,8 +48,8 @@
     section.main-categories {
         background-color: var(--bg-color-light-alt);
 
-        ul.main-categories {
-            margin: 50px 200px;
+        ul.main-categories-list {
+            margin: 4vh 12vw;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -59,10 +59,10 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: 15vw;
-                    height: 15vw;
+                    width: 230px;
+                    height: 230px;
                     background-color: var(--bg-color-dark);
-                    margin: 20px 0;
+                    margin: 20px 10px;
                     border-radius: 15px;
                     transition: transform 1s;
 
@@ -80,15 +80,12 @@
                     transform: scale(1.2);
                 }
             }
-
         }
-
-
     }
 
     section.main-blogs {
-        ul.main-blogs {
-            margin: 50px 200px;
+        ul.main-blogs-list {
+            margin: 4vh 12vw;
             display: flex;
             justify-content: space-between;
 
@@ -96,7 +93,6 @@
                 display: flex;
                 flex-direction: column;
                 width: 30%;
-                padding-left: 10px;
 
                 img {
                     margin-bottom: 15px;
@@ -120,13 +116,133 @@
                 p.main-blog-link {
 
                     a {
+                        color: var(--text-color-black);
+                        background-color: var(--bg-color-dark);
+                        padding: 5px 10px;
+                        border-radius: 15px;
+                        font-size: 0.9rem;
+
+                    }
+
+                    a:hover {
                         @include AccentedText;
                     }
                 }
             }
         }
     }
+}
 
+@media screen and (max-width: 1200px) {
+    .main {
+        section.main-search {
+            ul.main-search-list {
+                margin: 6vw;
+            }
+        }
 
+        section.main-categories {
+            ul.main-categories-list {
+                margin: 2vh 6vw;
+            }
+        }
 
+        section.main-blogs {
+            ul.main-blogs-list {
+                margin: 2vh 6vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        section.main-search {
+            ul.main-search-list {
+                margin: 6vw;
+
+                li {
+                    form.main-search-form {
+                        input.search-form {
+                            margin-right: 20px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        section.main-categories {
+            ul.main-categories-list {
+                margin: 4vh 12vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+
+        margin-top: 3vh;
+
+        section.main-search {
+            ul.main-search-list {
+                margin: 6vw;
+
+                li {
+
+                    h1 {
+                        text-align: center;
+                    }
+
+                    form.main-search-form {
+                        display: flex;
+                        flex-direction: column;
+
+                        input.search-form {
+                            width: 80%;
+                            margin-bottom: 20px;
+                            margin-right: 0;
+                        }
+
+                        button.nav-button {
+                            width: 88%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        section.main-categories {
+            h1.main-title {
+                display: flex;
+                justify-content: center;
+                white-space: nowrap;
+            }
+
+            ul.main-categories-list {
+                justify-content: center;
+            }
+        }
+
+        section.main-blogs {
+            ul.main-blogs-list {
+                flex-direction: column;
+                align-items: center;
+
+                li.main-blog {
+                    width: 80%;
+
+                    p.main-blog-text {
+                        display: none;
+                    }
+
+                    p.main-blog-link {
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
 }

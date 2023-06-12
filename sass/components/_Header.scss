@@ -8,16 +8,117 @@
     ul.header-nav {
         display: flex;
         width: 100%;
-        margin: 20px 200px;
+        margin: 4vh 12vw;
         justify-content: space-between;
         align-items: center;
         color: var(--text-color-dark);
 
         li {
-            &:first-child {
-                width: 30%;
+            &.header-nav-name {
+                width: 25%;
             }
 
+            &.header-nav-link {
+                font-weight: 600;
+            }
+        }
+    }
+
+    ul.header-nav-medium {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        ul.header-nav {
+            margin: 4vh 6vw;
+
+
+            li {
+                &.header-nav-name {
+                    width: 20%;
+                }
+            }
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .header {
+
+        ul.header-nav {
+            display: none;
+        }
+
+        ul.header-nav-medium {
+            width: 100%;
+            margin: 3vh 6vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li.header-nav-dropdown {
+
+                div.dropdown {
+
+                    div.dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: var(--bg-color-light);
+                        z-index: 1;
+
+                        a.header-nav-link {
+                            padding: 10px 15px;
+                        }
+
+                        a.header-nav-link:hover {
+                            background-color: var(--bg-color-dark);
+
+                            &:first-child {
+                                border-radius: 10px 10px 0 0;
+                            }
+
+                            &:last-child {
+                                border-radius: 0 0 10px 10px;
+                            }
+                        }
+                    }
+
+                }
+
+                div.dropdown:hover {
+                    div.dropdown-content {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: -40px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// @media only screen and (max-width: 768px) {
+//     .header {
+
+//         position: absolute;
+
+//         ul.header-nav {
+//             display: flex;
+//             flex-direction: column;
+//             margin: 4vh 6vw;
+
+//             li {
+//                 margin-bottom: 20px;
+//             }
+//         }
+
+//         ul.header-nav-medium {
+//             display: none;
+//         }
+//     }
+// }

@@ -6,7 +6,7 @@
 
     ul.footer-nav {
         display: flex;
-        margin: 20px 200px;
+        margin: 4vh 12vw;
         justify-content: space-between;
         color: var(--text-color-light);
 
@@ -29,7 +29,6 @@
             }
 
             &.footer-nav-menu {
-                // align-items: center;
                 width: 20%;
 
                 h2 {
@@ -46,9 +45,6 @@
                     li {
                         margin-bottom: 10px;
 
-                        a {
-                            color: var(--text-color-light);
-                        }
                     }
                 }
 
@@ -74,7 +70,71 @@
     p.copyright {
         display: flex;
         justify-content: center;
-        margin: 20px 200px;
+        margin: 4vh 12vw;
         color: var(--text-color-light);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        ul.footer-nav {
+            margin: 2vh 6vw;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        ul.footer-nav {
+            margin: 4vh 6vw;
+
+            li {
+
+                &.footer-nav-about {
+                    width: 20%;
+                }
+
+                &.footer-nav-media {
+                    width: 20%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        ul.footer-nav {
+            margin: 0 50px;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                align-items: center !important;
+
+                &.footer-nav-about {
+                    width: 50% !important;
+                    margin-top: 20px;
+                }
+
+                &.footer-nav-menu,
+                &.footer-nav-media {
+                    width: 50% !important;
+                    margin-top: 50px;
+                }
+
+                &.footer-nav-about {
+                    p.footer-nav-about-text {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        p.copyright {
+            width: 100%;
+            margin: 20px auto;
+        }
     }
 }

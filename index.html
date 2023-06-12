@@ -13,13 +13,30 @@
     <div class="root">
         <header class="header">
             <ul class="header-nav">
-                <li>
+                <li class="header-nav-name">
                     <h2>Job Finder</h2>
                 </li>
-                <li><a class="header-nav-link" href="#">FOR CANDIDATES</a></li>
-                <li><a class="header-nav-link" href="#">FOR EMPLOYERS</a></li>
-                <li><a class="header-nav-link" href="#">CONTACT US</a></li>
-                <li><a href="#"><button class="nav-button">POST A NEW JOB</button></a></li>
+                <li class="header-nav-link"><a href="#">FOR CANDIDATES</a></li>
+                <li class="header-nav-link"><a href="#">FOR EMPLOYERS</a></li>
+                <li class="header-nav-link"><a href="#">CONTACT US</a></li>
+                <li class="header-nav-button"><a href="#"><button class="nav-button">POST A NEW JOB</button></a>
+                </li>
+            </ul>
+            <ul class="header-nav-medium">
+                <li class="header-nav-name">
+                    <h2>Job Finder</h2>
+                </li>
+                <li class="header-nav-dropdown">
+                    <div class="dropdown">
+                        <button class="nav-button">MENU</button>
+                        <div class="dropdown-content">
+                            <a class="header-nav-link" href="#">FOR CANDIDATES</a>
+                            <a class="header-nav-link" href="#">FOR EMPLOYERS</a>
+                            <a class="header-nav-link" href="#">CONTACT US</a>
+                            <a class="header-nav-link" href="#">POST A NEW JOB</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </header>
         <main class="main">
@@ -40,7 +57,7 @@
             </section>
             <section class="main-categories">
                 <h1 class="main-title">Popular Categories</h1>
-                <ul class="main-categories">
+                <ul class="main-categories-list">
                     <li>
                         <ul class="main-category">
                             <li><img src="assets/images/finance.png" alt="finance"></li>
@@ -101,7 +118,7 @@
             </section>
             <section class="main-blogs">
                 <h1 class="main-title">Blogs</h1>
-                <ul class="main-blogs">
+                <ul class="main-blogs-list">
                     <li class="main-blog">
                         <img src="assets/images/blog_1_img.jpg" alt="">
                         <h3>Lorem, ipsum dolor</h3>
@@ -136,7 +153,8 @@
             <ul class="footer-nav">
                 <li class="footer-nav-about">
                     <h2>ABOUT US</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatem officia voluptate eum
+                    <p class="footer-nav-about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                        voluptatem officia voluptate eum
                         doloribus voluptas, expedita eveniet sequi dolores aliquam.</p>
                     <a href="#"><button class="nav-button">READ MORE</button></a>
                 </li>
