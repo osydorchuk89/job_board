@@ -26,6 +26,10 @@
                 p {
                     margin-bottom: 20px;
                 }
+
+                a.footer-nav-about-link-small {
+                    display: none;
+                }
             }
 
             &.footer-nav-menu {
@@ -114,19 +118,37 @@
                 align-items: center !important;
 
                 &.footer-nav-about {
-                    width: 50% !important;
-                    margin-top: 20px;
+                    @include FooterSmall;
                 }
 
-                &.footer-nav-menu,
+                &.footer-nav-menu {
+                    @include FooterSmall;
+                }
+
                 &.footer-nav-media {
-                    width: 50% !important;
-                    margin-top: 50px;
+                    @include FooterSmall;
+
+                    ul.footer-nav-media-icons {
+                        width: 60%;
+                    }
                 }
 
                 &.footer-nav-about {
+
+                    h2 {
+                        display: none;
+                    }
+
                     p.footer-nav-about-text {
                         display: none;
+                    }
+
+                    a.footer-nav-about-link-large {
+                        display: none;
+                    }
+
+                    a.footer-nav-about-link-small {
+                        display: block;
                     }
                 }
             }

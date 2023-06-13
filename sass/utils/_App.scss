@@ -35,6 +35,11 @@ textarea {
     font-size: 0.9rem;
 }
 
+@mixin FooterSmall {
+    width: 50% !important;
+    margin-top: 50px;
+}
+
 .nav-button {
     padding: 15px 20px;
     border-radius: 10px;
