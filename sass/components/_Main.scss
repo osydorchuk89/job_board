@@ -48,6 +48,10 @@
     section.main-categories {
         background-color: var(--bg-color-light-alt);
 
+        h1 {
+            text-align: center;
+        }
+
         ul.main-categories-list {
             margin: 4vh 12vw;
             display: grid;
@@ -85,6 +89,11 @@
     }
 
     section.main-blogs {
+
+        h1 {
+            text-align: center;
+        }
+
         ul.main-blogs-list {
             margin: 4vh 12vw;
             display: flex;
@@ -136,6 +145,176 @@
     }
 }
 
+.main-contact {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-dark);
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    ul.main-contact-content {
+        display: flex;
+        margin: 4vh 12vw;
+
+        li.main-contact-content-left {
+
+            background-color: var(--bg-color-light-alt);
+            width: 60%;
+            padding: 4vh;
+            margin-right: 2vw;
+
+            h3 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            form.main-contact-form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin-bottom: 30px;
+                    padding: 10px;
+                }
+
+                textarea {
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    resize: none;
+                }
+
+                button {
+                    width: 30%;
+                }
+
+            }
+
+            form.main-post-form {
+                display: flex;
+                flex-direction: column;
+
+                .main-post-form-subtitle {
+                    font-weight: 700;
+                }
+
+                input {
+                    margin-bottom: 30px;
+                    padding: 10px;
+                }
+
+                textarea {
+                    margin-bottom: 30px;
+                    padding: 10px;
+                    resize: none;
+                }
+
+                button {
+                    width: 30%;
+                }
+
+
+            }
+        }
+
+        li.main-contact-content-right {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+
+            ul {
+                li {
+                    padding: 4vh;
+                    margin-bottom: 20px;
+                    background-color: var(--bg-color-light-alt);
+
+                    h3 {
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+
+                    h4 {
+                        margin-top: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    p.main-contact-content-email {
+                        color: var(--text-color-light);
+                    }
+
+                    p.main-contact-content-email:hover {
+                        color: var(--text-color-dark);
+                        cursor: pointer;
+                    }
+
+                    button {
+                        margin-top: 20px;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+.main-jobs {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-dark);
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    ul.main-jobs-list {
+        display: flex;
+        flex-direction: column;
+        margin: 4vh 12vw;
+
+        li.main-job-block {
+            background-color: var(--bg-color-light-alt);
+            border-bottom: 1px solid var(--bg-color-dark);
+            padding: 15px;
+
+            h3 {
+                margin-bottom: 15px;
+            }
+
+            ul.main-job-details {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--text-color-light);
+
+                li.main-job-company,
+                li.main-job-location,
+                li.main-job-salary {
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+
+                li.main-job-type {
+                    @include AccentedText;
+                }
+            }
+
+            p.main-job-description {
+                margin-top: 15px;
+            }
+
+            button.nav-button {
+                align-self: center;
+                padding: 8px 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .main {
         section.main-search {
@@ -154,6 +333,28 @@
             ul.main-blogs-list {
                 margin: 2vh 6vw;
             }
+        }
+    }
+
+    .main-contact {
+        ul.main-contact-content {
+            margin: 2vh 6vw;
+
+            li.main-contact-content-left {
+
+                form.main-contact-form {
+
+                    button.nav-button {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-jobs {
+        ul.main-jobs-list {
+            margin: 2vh 6vw;
         }
     }
 }
@@ -178,6 +379,38 @@
         section.main-categories {
             ul.main-categories-list {
                 margin: 4vh 12vw;
+            }
+        }
+    }
+
+    .main-contact {
+        ul.main-contact-content {
+            flex-direction: column;
+            align-items: center;
+
+            li.main-contact-content-left {
+                width: 80%;
+                padding: 4vh;
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+
+            li.main-contact-content-right {
+                width: 80%;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                        padding: 4vh;
+                        margin-left: -4vh;
+
+                        &:first-child {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -239,6 +472,41 @@
 
                     p.main-blog-text {
                         display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-jobs {
+        display: flex;
+        justify-content: center;
+
+        ul.main-jobs-list {
+            width: 82%;
+
+            li.main-job-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+                    text-align: center;
+                }
+
+                ul.main-job-details {
+                    flex-direction: column;
+                    align-items: center;
+
+                    li.main-job-logo {
+                        display: none;
+                    }
+
+                    li.main-job-company,
+                    li.main-job-location,
+                    li.main-job-salary {
+                        width: auto;
+                        margin-bottom: 10px;
                     }
                 }
             }

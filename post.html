@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.min.css" />
+    <title>Job Finder</title>
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <ul class="header-nav">
+                <li class="header-nav-name">
+                    <h2><a class="header-nav-main-link" href="index.html">Job Finder</a></h2>
+                </li>
+                <li class="header-nav-link"><a href="vacancies.html">FOR CANDIDATES</a></li>
+                <li class="header-nav-link"><a href="post.html">FOR EMPLOYERS</a></li>
+                <li class="header-nav-link"><a href="contact.html">CONTACT US</a></li>
+                <li class="header-nav-button"><a href="post.html"><button class="nav-button">POST A NEW JOB</button></a>
+                </li>
+            </ul>
+            <ul class="header-nav-medium">
+                <li class="header-nav-name">
+                    <h2><a class="header-nav-main-link" href="index.html">Job Finder</a></h2>
+                </li>
+                <li class="header-nav-dropdown">
+                    <div class="dropdown">
+                        <button class="nav-button">MENU</button>
+                        <div class="dropdown-content">
+                            <a class="header-nav-link" href="vacancies.html">FOR CANDIDATES</a>
+                            <a class="header-nav-link" href="post.html">FOR EMPLOYERS</a>
+                            <a class="header-nav-link" href="contact.html">CONTACT US</a>
+                            <a class="header-nav-link" href="post.html">POST A NEW JOB</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <main class="main-contact">
+            <ul class="main-contact-content">
+                <li class="main-contact-content-left">
+                    <h3>Post a Job</h3>
+                    <form class="main-post-form" action="">
+                        <label class="main-post-form-subtitle" for="title">Job Title</label><br>
+                        <input type="text" id="title" name="title" placeholder="Enter job title">
+                        <label class="main-post-form-subtitle" for="company">Company</label><br>
+                        <input type="text" id="company" name="company" placeholder="Enter your company name">
+                        <p class="main-post-form-subtitle">Job type</p><br>
+                        <div>
+                            <input type="radio" id="full_time" name="job_type" value="Full Time" checked>
+                            <label for="full_time">Full Time</label><br>
+                        </div>
+                        <div><input type="radio" id="part_time" name="job_type" value="Part Time">
+                            <label for="part_time">Part Time</label><br>
+                        </div>
+                        <div><input type="radio" id="freelance" name="job_type" value="Freelance">
+                            <label for="freelance">Freelance</label><br>
+                        </div>
+                        <div><input type="radio" id="internship" name="job_type" value="Internship">
+                            <label for="internship">Internship</label><br>
+                        </div>
+                        <label class="main-post-form-subtitle" for="location">Location</label><br>
+                        <input type="text" id="location" name="location" placeholder="Enter location">
+                        <label class="main-post-form-subtitle" for="description">Job Description</label><br>
+                        <textarea name="description" id="description" cols="30" rows="10"
+                            placeholder="Enter job description"></textarea>
+                        <button class="nav-button">Post</button>
+                    </form>
+                </li>
+                <li class="main-contact-content-right">
+                    <ul>
+                        <li class="main-contact-content-info">
+                            <h3>Contact Info</h3>
+                            <h4>Address</h4>
+                            <p>117 Lorem Ipsum, Dolor Sit, Amet, Consectetur</p>
+                            <h4>Phone</h4>
+                            <p>+123 456 789</p>
+                            <h4>Email Address</h4>
+                            <p class="main-contact-content-email">email@address.com</p>
+                        </li>
+                        <li class="main-contact-content-about">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo numquam, odio sed
+                                laborum eveniet pariatur eius porro! Animi nesciunt labore necessitatibus quaerat
+                                repudiandae voluptate deleniti quam quos repellendus perspiciatis repellat in fugit eius
+                                ipsum, enim officia, eveniet fuga at.</p>
+                            <button class="nav-button">Read more</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+        <footer class="footer">
+            <ul class="footer-nav">
+                <li class="footer-nav-about">
+                    <h2>ABOUT US</h2>
+                    <p class="footer-nav-about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+                        voluptatem officia voluptate eum
+                        doloribus voluptas, expedita eveniet sequi dolores aliquam.</p>
+                    <a class="footer-nav-about-link-large" href="#"><button class="nav-button">READ MORE</button></a>
+                    <a class="footer-nav-about-link-small" href="#"><button class="nav-button">ABOUT US</button></a>
+                </li>
+                <li class="footer-nav-menu">
+                    <h2>NAVIGATE</h2>
+                    <ul class="footer-nav-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+                <li class="footer-nav-menu">
+                    <h2>CATEGORIES</h2>
+                    <ul class="footer-nav-list">
+                        <li><a href="#">Full-Time</a></li>
+                        <li><a href="#">Part-Time</a></li>
+                        <li><a href="#">Freelance</a></li>
+                        <li><a href="#">Internship</a></li>
+                    </ul>
+                </li>
+                <li class="footer-nav-media">
+                    <h2>SOCIAL MEDIA</h2>
+                    <ul class="footer-nav-media-icons">
+                        <li>
+                            <a href="#"><img src="assets/images/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/instagram.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/twitter.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/linkedin.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="copyright">Copyright &#169; 2023 All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

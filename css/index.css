@@ -206,11 +206,14 @@ textarea {
   transition: 0.5s;
 }
 
+<<<<<<< Updated upstream
 .main-title {
   margin: 50px 200px;
   text-align: center;
 }
 
+=======
+>>>>>>> Stashed changes
 :root {
   --bg-color-dark: #BDCDD6;
   --bg-color-dark-acc: #525b60;
@@ -263,6 +266,12 @@ textarea {
 .header ul.header-nav li.header-nav-name {
   width: 25%;
 }
+.header ul.header-nav li.header-nav-name h2 a.header-nav-main-link {
+  color: var(--text-color-dark);
+}
+.header ul.header-nav li.header-nav-name h2 a.header-nav-main-link:hover {
+  color: var(--text-color-light);
+}
 .header ul.header-nav li.header-nav-link {
   font-weight: 600;
 }
@@ -293,6 +302,12 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .header ul.header-nav-medium li.header-nav-name h2 a.header-nav-main-link {
+    color: var(--text-color-dark);
+  }
+  .header ul.header-nav-medium li.header-nav-name h2 a.header-nav-main-link:hover {
+    color: var(--text-color-light);
   }
   .header ul.header-nav-medium li.header-nav-dropdown div.dropdown div.dropdown-content {
     display: none;
@@ -381,6 +396,9 @@ textarea {
 .main section.main-categories {
   background-color: var(--bg-color-light-alt);
 }
+.main section.main-categories h1 {
+  text-align: center;
+}
 .main section.main-categories ul.main-categories-list {
   margin: 4vh 12vw;
   display: grid;
@@ -425,6 +443,9 @@ textarea {
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+.main section.main-blogs h1 {
+  text-align: center;
 }
 .main section.main-blogs ul.main-blogs-list {
   margin: 4vh 12vw;
@@ -478,6 +499,179 @@ textarea {
   font-size: 0.9rem;
 }
 
+.main-contact {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-dark);
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main-contact ul.main-contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4vh 12vw;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left {
+  background-color: var(--bg-color-light-alt);
+  width: 60%;
+  padding: 4vh;
+  margin-right: 2vw;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-contact-form input {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-contact-form textarea {
+  margin-bottom: 30px;
+  padding: 10px;
+  resize: none;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-contact-form button {
+  width: 30%;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-post-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-post-form .main-post-form-subtitle {
+  font-weight: 700;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-post-form input {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-post-form textarea {
+  margin-bottom: 30px;
+  padding: 10px;
+  resize: none;
+}
+.main-contact ul.main-contact-content li.main-contact-content-left form.main-post-form button {
+  width: 30%;
+}
+.main-contact ul.main-contact-content li.main-contact-content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+}
+.main-contact ul.main-contact-content li.main-contact-content-right ul li {
+  padding: 4vh;
+  margin-bottom: 20px;
+  background-color: var(--bg-color-light-alt);
+}
+.main-contact ul.main-contact-content li.main-contact-content-right ul li h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main-contact ul.main-contact-content li.main-contact-content-right ul li h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.main-contact ul.main-contact-content li.main-contact-content-right ul li p.main-contact-content-email {
+  color: var(--text-color-light);
+}
+.main-contact ul.main-contact-content li.main-contact-content-right ul li p.main-contact-content-email:hover {
+  color: var(--text-color-dark);
+  cursor: pointer;
+}
+.main-contact ul.main-contact-content li.main-contact-content-right ul li button {
+  margin-top: 20px;
+}
+
+.main-jobs {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-dark);
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main-jobs ul.main-jobs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4vh 12vw;
+}
+.main-jobs ul.main-jobs-list li.main-job-block {
+  background-color: var(--bg-color-light-alt);
+  border-bottom: 1px solid var(--bg-color-dark);
+  padding: 15px;
+}
+.main-jobs ul.main-jobs-list li.main-job-block h3 {
+  margin-bottom: 15px;
+}
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--text-color-light);
+}
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-company,
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-location,
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-salary {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-company img,
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-location img,
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-salary img {
+  margin-right: 8px;
+}
+.main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-type {
+  background-color: var(--bg-color-dark-acc);
+  color: var(--text-color-light-acc);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+.main-jobs ul.main-jobs-list li.main-job-block p.main-job-description {
+  margin-top: 15px;
+}
+.main-jobs ul.main-jobs-list li.main-job-block button.nav-button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 8px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 1200px) {
   .main section.main-search ul.main-search-list {
     margin: 6vw;
@@ -486,6 +680,15 @@ textarea {
     margin: 2vh 6vw;
   }
   .main section.main-blogs ul.main-blogs-list {
+    margin: 2vh 6vw;
+  }
+  .main-contact ul.main-contact-content {
+    margin: 2vh 6vw;
+  }
+  .main-contact ul.main-contact-content li.main-contact-content-left form.main-contact-form button.nav-button {
+    width: 50%;
+  }
+  .main-jobs ul.main-jobs-list {
     margin: 2vh 6vw;
   }
 }
@@ -498,6 +701,35 @@ textarea {
   }
   .main section.main-categories ul.main-categories-list {
     margin: 4vh 12vw;
+  }
+  .main-contact ul.main-contact-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-contact ul.main-contact-content li.main-contact-content-left {
+    width: 80%;
+    padding: 4vh;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .main-contact ul.main-contact-content li.main-contact-content-right {
+    width: 80%;
+  }
+  .main-contact ul.main-contact-content li.main-contact-content-right ul {
+    width: 100%;
+  }
+  .main-contact ul.main-contact-content li.main-contact-content-right ul li {
+    width: 100%;
+    padding: 4vh;
+    margin-left: -4vh;
+  }
+  .main-contact ul.main-contact-content li.main-contact-content-right ul li:first-child {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -555,6 +787,50 @@ textarea {
   }
   .main section.main-blogs ul.main-blogs-list li.main-blog p.main-blog-text {
     display: none;
+  }
+  .main-jobs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-jobs ul.main-jobs-list {
+    width: 82%;
+  }
+  .main-jobs ul.main-jobs-list li.main-job-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-jobs ul.main-jobs-list li.main-job-block h3 {
+    text-align: center;
+  }
+  .main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-logo {
+    display: none;
+  }
+  .main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-company,
+  .main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-location,
+  .main-jobs ul.main-jobs-list li.main-job-block ul.main-job-details li.main-job-salary {
+    width: auto;
+    margin-bottom: 10px;
   }
 }
 .footer {
