@@ -350,7 +350,7 @@ textarea {
 }
 .main section.main-search {
   padding-top: 45px;
-  background-image: url("../../assets/images/job_search.jpg");
+  background-image: url("https://raw.githubusercontent.com/osydorchuk89/job_board/main/assets/images/job_search.jpg");
   background-position: 25%;
   background-repeat: no-repeat;
 }
